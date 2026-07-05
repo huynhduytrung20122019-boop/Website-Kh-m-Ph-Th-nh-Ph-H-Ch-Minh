@@ -98,15 +98,10 @@ body {
 @media (max-width: 576px) {
   .Menu-chinh {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 15px;
     cursor: pointer;
-    width: 100%;
-  }
-  .Menu {
-    background-color: #99ccff;
   }
   .logo {
     width: 10%;
@@ -114,12 +109,14 @@ body {
   }
   #anhbanner {
     width: 100%;
-    height: 500px;
+    height: 450px;
   }
   .DiaDanh-Container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
     flex-wrap: wrap;
+    border: 1px solid #ccc;
   }
   .DiaDanh-Amthuc {
     flex: 1;
@@ -130,8 +127,8 @@ body {
     white-space: normal;
   }
   .DiaDanh-Amthuc img {
-    border-radius: 10px;
+    border-radius: 15px;
     width: 100%;
-    height: 100%;
+    height: 85%;
   }
 }
