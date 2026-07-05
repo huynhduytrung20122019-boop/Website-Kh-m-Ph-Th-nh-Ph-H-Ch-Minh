@@ -113,10 +113,11 @@ body {
   }
   .DiaDanh-Container {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2fr, 1fr);
     gap: 15px;
-    flex-wrap: wrap;
-    border: 1px solid #ccc;
+    width: 100%;
+    border: 2px solid #ccc;
+    margin: 0 auto;
   }
   .DiaDanh-Amthuc {
     flex: 1;
@@ -130,5 +131,6 @@ body {
     border-radius: 15px;
     width: 100%;
     height: 85%;
+    object-fit: cover;
   }
 }
