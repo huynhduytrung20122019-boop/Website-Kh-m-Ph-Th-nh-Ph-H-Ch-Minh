@@ -72,6 +72,25 @@ body {
 /* Css cho ẩm thực */
 /*...*/
 /* Css cho du lịch */
+/*Ảnh trang chủ*/
+.homepitr {
+width: 100%;
+height: 550px;
+}
+/* tiêu đề phụ*/
+.tlp {
+    color: #6E473B;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: underline;
+    text-decoration-color: #A1887f;
+    text-underline-offset: 8px;
+}
+.tlc {
+margin-top: 10px;
+}
+
 /*...*/
 /* Css cho văn hóa */
 /*...*/
