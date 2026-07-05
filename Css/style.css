@@ -113,9 +113,10 @@ body {
   }
   .DiaDanh-Container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 15px;
     width: 100%;
   }
   .DiaDanh-Amthuc {
