@@ -8,7 +8,8 @@ body {
   margin: 0;
   padding: 0;
 }
-/* Css cho trang chủ */
+/*Thanh Menu*/
+
 .Menu-chinh {
   display: flex;
   justify-content: center;
@@ -21,6 +22,49 @@ body {
 }
 .Menu {
   background-color: #99ccff;
+}
+
+/*......*/
+
+/* Css cho trang chủ */
+
+/* Noi dung */
+.noiDung ul {
+  margin-top: 1%;
+}
+.noiDung p {
+  font-size: 28px;
+}
+/* Dia Danh */
+
+/* Biến container chứa 4 địa danh thành Flexbox */
+.DiaDanh-Amthuc {
+  margin-top: 30px;
+}
+.DiaDanh-Amthuc {
+  display: flex;
+  justify-content: space-between; /* Chia đều khoảng cách giữa các cột */
+  gap: 15px; /* Khoảng cách giữa các ô địa danh */
+  padding: 0 20px; /* Thụt lề 2 bên trái phải cho đẹp */
+}
+
+/* Định dạng cho từng ô địa danh con */
+.DiaDanh-Amthuc > div {
+  flex: 1;
+}
+/* Định dạng hình ảnh bên trong */
+.DiaDanh-Amthuc img {
+  width: 100%; /* Ảnh rộng vừa khít ô chứa nó */
+  height: 250px; /* Thiết lập chiều cao cố định cho bằng nhau */
+  object-fit: cover; /* Cắt cúp ảnh thông minh, không lo bị méo hay co rúm */
+  border-radius: 8px; /* (Tùy chọn) Bo tròn nhẹ các góc ảnh nhìn cho hiện đại */
+}
+
+/* Định dạng chữ mô tả */
+.DiaDanh-Amthuc p {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
 }
 /*...*/
 /* Css cho lịch sử */
