@@ -12,19 +12,18 @@ body {
 @media (max-width: 576px) {
   .Menu-chinh {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
     cursor: pointer;
   }
   .logo {
-    width: 5%;
-    height: 5%;
+    width: 10%;
+    height: 10%;
   }
   #anhbanner {
     width: 100%;
-    height: 550px;
+    height: 500px;
   }
   .DiaDanh-Container {
     display: flex;
@@ -36,13 +35,13 @@ body {
   }
   .DiaDanh-Amthuc p {
     text-align: center;
-    font-size: 15px;
+    font-size: 10px;
     white-space: normal;
   }
   .DiaDanh-Amthuc img {
-    border-radius: 15px;
+    border-radius: 20px;
     width: 100%;
-    height: 100px;
+    height: 50px;
   }
 }
 .Menu-chinh {
