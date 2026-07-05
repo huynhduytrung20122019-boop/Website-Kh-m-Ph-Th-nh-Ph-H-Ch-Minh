@@ -12,7 +12,7 @@ body {
 @media (max-width: 576px) {
   .Menu-chinh {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
@@ -25,6 +25,24 @@ body {
   #anhbanner {
     width: 100%;
     height: 550px;
+  }
+  .DiaDanh-Container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .DiaDanh-Amthuc {
+    flex: 1;
+  }
+  .DiaDanh-Amthuc p {
+    text-align: center;
+    font-size: 15px;
+    white-space: normal;
+  }
+  .DiaDanh-Amthuc img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100px;
   }
 }
 .Menu-chinh {
