@@ -1,6 +1,26 @@
+/* KHÔNG ĐƯỢC ĐỤNG TỚI . KHÔNG SỬA */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Giúp tính toán kích thước chuẩn hơn */
+}
+body {
+  margin: 0;
+  padding: 0;
+}
 /* Css cho trang chủ */
-.noiDung p {
-  color: red;
+.Menu-chinh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  cursor: pointer;
+}
+.logo {
+  border-radius: 30px;
+}
+.Menu {
+  background-color: #99ccff;
 }
 /*...*/
 /* Css cho lịch sử */
