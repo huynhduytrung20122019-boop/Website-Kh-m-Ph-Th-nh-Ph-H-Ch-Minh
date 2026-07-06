@@ -28,15 +28,15 @@ body {
 .Menu {
   background-color: #99ccff;
 }
-Menu-chinh a {
+.Menu-chinh a {
   position: relative; /* Bắt buộc phải có để định vị đường gạch dưới */
   text-decoration: none; /* Xóa dấu gạch dưới mặc định của trình duyệt */
-  color: #000; /* Màu chữ lúc bình thường (bạn tự đổi theo ý muốn) */
-  font-size: 18px;
-  padding-bottom: 5px; /* Tạo một chút khoảng cách từ chữ xuống đường gạch */
+  color: black; /* Màu chữ lúc bình thường (bạn tự đổi theo ý muốn) */
+  font-size: 16px;
+  padding-bottom: 10px; /* Tạo một chút khoảng cách từ chữ xuống đường gạch */
   transition: color 0.3s ease;
+  transition: 0.3s ease;
 }
-
 /* 2. Tự chế đường gạch dưới nằm ẩn ở phía bên trái */
 .Menu-chinh a::after {
   content: "";
@@ -44,7 +44,7 @@ Menu-chinh a {
   left: 0;
   bottom: 0; /* Đặt sát dưới đáy của chữ */
   width: 100%; /* Chiều dài đường gạch bằng đúng chiều dài chữ */
-  height: 2px; /* Độ dày của đường gạch dưới */
+  height: 3px; /* Độ dày của đường gạch dưới */
   background-color: #33ffff; /* Màu đỏ của đường gạch như bạn muốn */
 
   /* MẤU CHỐT: Thu nhỏ đường kẻ về bằng 0 và đặt tâm chuyển động ở góc bên TRÁI */
@@ -57,7 +57,8 @@ Menu-chinh a {
 
 /* 3. Hiệu ứng khi di chuột (Hover) vào chữ */
 .Menu-chinh a:hover {
-  color: #996600; /* Chữ cũng đổi sang màu đỏ cho đồng bộ (tùy chọn) */
+  transform: scaleX(1.05);
+  color: #ff0000; /* Chữ cũng đổi sang màu đỏ cho đồng bộ (tùy chọn) */
 }
 
 .Menu-chinh a:hover::after {
@@ -93,10 +94,15 @@ Menu-chinh a {
   border-radius: 15px;
 }
 .lienhe-form button {
+  height: 40px;
+  width: 120px;
   margin-top: 20px;
-  width: 80%;
-  align-self: flex-end;
-  border-radius: 15px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  align-items: flex-end;
 }
 .lienhe-form p {
   font-size: 20px;
@@ -114,6 +120,9 @@ Menu-chinh a {
 }
 .noiDung p {
   font-size: 28px;
+}
+.noiDung li {
+  font-size: 20px;
 }
 /* Dia Danh */
 
