@@ -187,4 +187,44 @@ body {
     height: 100px;
     object-fit: cover;
   }
+  .lienhe-form {
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid black;
+    padding: 20px 20px;
+    background-color: #ffffcc;
+  }
+  .lienhe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 50px;
+  }
+  .logolienhe {
+    width: 50px;
+    height: 50px;
+  }
+  .lienhe-form input {
+    margin-top: 20px;
+    width: 80%;
+    height: 50px;
+    padding-left: 20px;
+    padding: 20px 20px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+  }
+  .lienhe-form button {
+    margin-top: 20px;
+    width: 80%;
+    align-self: flex-end;
+    border-radius: 15px;
+  }
+  .lienhe-form p {
+    font-size: 20px;
+  }
+  .lienhe-form h1 {
+    margin-bottom: 35px;
+  }
 }
