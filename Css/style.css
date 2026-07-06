@@ -36,6 +36,7 @@ body {
 }
 
 /* Dia Danh */
+
 /* Biến container chứa 4 địa danh thành Flexbox */
 .DiaDanh-Amthuc {
   margin-top: 30px;
@@ -102,6 +103,7 @@ body {
     align-items: center;
     gap: 15px;
     cursor: pointer;
+    flex-wrap: wrap;
   }
   .logo {
     width: 10%;
