@@ -16,6 +16,10 @@ body {
   gap: 5%;
   cursor: pointer;
 }
+.Menu-chinh a {
+  text-decoration: none;
+  color: black;
+}
 .logo {
   border-radius: 30px;
   width: 5%;
@@ -24,7 +28,42 @@ body {
 .Menu {
   background-color: #99ccff;
 }
+Menu-chinh a {
+  position: relative; /* Bắt buộc phải có để định vị đường gạch dưới */
+  text-decoration: none; /* Xóa dấu gạch dưới mặc định của trình duyệt */
+  color: #000; /* Màu chữ lúc bình thường (bạn tự đổi theo ý muốn) */
+  font-size: 18px;
+  padding-bottom: 5px; /* Tạo một chút khoảng cách từ chữ xuống đường gạch */
+  transition: color 0.3s ease;
+}
 
+/* 2. Tự chế đường gạch dưới nằm ẩn ở phía bên trái */
+.Menu-chinh a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Đặt sát dưới đáy của chữ */
+  width: 100%; /* Chiều dài đường gạch bằng đúng chiều dài chữ */
+  height: 2px; /* Độ dày của đường gạch dưới */
+  background-color: #33ffff; /* Màu đỏ của đường gạch như bạn muốn */
+
+  /* MẤU CHỐT: Thu nhỏ đường kẻ về bằng 0 và đặt tâm chuyển động ở góc bên TRÁI */
+  transform: scaleX(0);
+  transform-origin: bottom left;
+
+  /* Tạo hiệu ứng chuyển động mượt mà trong 0.3 giây */
+  transition: transform 0.3s ease-out;
+}
+
+/* 3. Hiệu ứng khi di chuột (Hover) vào chữ */
+.Menu-chinh a:hover {
+  color: #996600; /* Chữ cũng đổi sang màu đỏ cho đồng bộ (tùy chọn) */
+}
+
+.Menu-chinh a:hover::after {
+  /* Phóng to đường kẻ lên 100% (scaleX(1)), tạo hiệu ứng trượt từ trái sang */
+  transform: scaleX(1);
+}
 /*Liên Hệ */
 .lienhe-form {
   display: flex;
@@ -194,18 +233,6 @@ body {
     padding: 20px 20px;
     background-color: #ffffcc;
   }
-  .lienhe {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    padding: 0 50px;
-  }
-  .logolienhe {
-    width: 50px;
-    height: 50px;
-  }
   .lienhe-form input {
     margin-top: 20px;
     width: 80%;
@@ -214,17 +241,5 @@ body {
     padding: 20px 10px;
     border-radius: 15px;
     flex-wrap: wrap;
-  }
-  .lienhe-form button {
-    margin-top: 20px;
-    width: 80%;
-    align-self: flex-end;
-    border-radius: 15px;
-  }
-  .lienhe-form p {
-    font-size: 20px;
-  }
-  .lienhe-form h1 {
-    margin-bottom: 35px;
   }
 }
