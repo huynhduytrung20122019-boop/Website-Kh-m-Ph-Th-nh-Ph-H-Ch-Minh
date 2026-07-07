@@ -165,8 +165,35 @@ body {
 }
 /*...*/
 /* Css cho lịch sử */
+
+/* Hiệu ứng trượt ^^^ */
+.khung-tieu-de {
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  position: relative;
+}
+
+.tieu-de-chay {
+  position: absolute;
+  white-space: nowrap;
+  color: white;
+  animation: chayMotChieu 15s linear infinite;
+}
+
+@keyframes chayMotChieu {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100vw);
+  }
+}
+
 .lichsu-banner-chu {
   text-align: center;
+  margin-top: 15px;
 }
 .ls {
   display: flex;
@@ -197,9 +224,6 @@ body {
   margin-top: 5px;
   border-radius: 15px;
   color: #00cccc;
-}
-.nd-ls img {
-  width: 100%;
 }
 /*...*/
 
@@ -297,6 +321,9 @@ body {
     width: 50px;
   }
   /* Lich su */
+  .ls {
+    gap: 5px;
+  }
   .logobaner {
     width: 25px;
     height: 25px;
@@ -305,5 +332,6 @@ body {
   }
   .nd-ls img {
     width: 100%;
+    object-fit: cover;
   }
 }
