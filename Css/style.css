@@ -198,6 +198,9 @@ body {
   border-radius: 15px;
   color: #00cccc;
 }
+.nd-ls img {
+  width: 100%;
+}
 /*...*/
 
 /* Css cho ẩm thực */
@@ -299,5 +302,8 @@ body {
     height: 25px;
     border-radius: 20px;
     object-fit: cover;
+  }
+  .nd-ls img {
+    width: 100%;
   }
 }
