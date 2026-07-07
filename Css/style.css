@@ -181,6 +181,7 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 20px;
+  object-fit: cover;
 }
 .logols {
   width: 50%;
@@ -291,5 +292,12 @@ body {
   }
   .lienhe-form button {
     width: 50px;
+  }
+  /* Lich su */
+  .logobaner {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    object-fit: cover;
   }
 }
