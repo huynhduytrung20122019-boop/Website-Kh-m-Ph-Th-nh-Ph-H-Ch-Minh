@@ -164,9 +164,11 @@ body {
   filter: brightness(100%);
 }
 /*...*/
+
 /* Css cho lịch sử */
 
 /* Hiệu ứng trượt ^^^ */
+
 .khung-tieu-de {
   width: 100%;
   height: 70px;
@@ -224,6 +226,9 @@ body {
   margin-top: 5px;
   border-radius: 15px;
   color: #00cccc;
+}
+.gioithieu-lichsu h2 {
+  margin-top: 30px;
 }
 /*...*/
 
