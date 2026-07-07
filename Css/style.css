@@ -165,10 +165,46 @@ body {
 }
 /*...*/
 /* Css cho lịch sử */
+.lichsu-banner-chu {
+  text-align: center;
+}
+.ls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.ls p {
+  color: #ff3300;
+}
+.logobaner {
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+}
+.logols {
+  width: 50%;
+  height: 280px;
+  border-radius: 25px;
+}
+.lichsu-banner {
+  height: 350px;
+  border-radius: 25px;
+  padding: 0 25px;
+}
+.lichsu-banner-chu h1 {
+  margin-top: 5px;
+  border-radius: 15px;
+  color: #00cccc;
+}
 /*...*/
+
 /* Css cho ẩm thực */
 /*...*/
+
 /* Css cho du lịch */
+/*.....*/
+
 /*Ảnh trang chủ*/
 .homepitr {
   width: 100%;
@@ -189,8 +225,10 @@ body {
 }
 
 /*...*/
+
 /* Css cho văn hóa */
 /*...*/
+
 /* Css cho liên hệ */
 /*...*/
 
