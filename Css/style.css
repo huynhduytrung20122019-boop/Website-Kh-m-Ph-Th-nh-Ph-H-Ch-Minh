@@ -352,7 +352,7 @@ body {
   }
   /* Lich su */
   .ls p {
-    font-size: 10px;
+    font-size: 12px;
     gap: 5px;
   }
   .logobaner {
@@ -367,7 +367,7 @@ body {
   }
   .nd-ls p {
     width: 100%;
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 10x;
   }
   .nd {
