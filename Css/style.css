@@ -316,6 +316,9 @@ body {
     gap: 15px;
     width: 100%;
   }
+  .noiDung li {
+    font-size: 15px;
+  }
   .DiaDanh-Amthuc {
     flex: 0 0 calc(50%-8px);
     box-sizing: border-box;
@@ -351,8 +354,7 @@ body {
     width: 50px;
   }
   /* Lich su */
-  .ls p {
-    font-size: 12px;
+  .ls h2 {
     gap: 5px;
   }
   .logobaner {
