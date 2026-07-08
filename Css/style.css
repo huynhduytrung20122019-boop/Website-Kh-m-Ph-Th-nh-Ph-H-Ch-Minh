@@ -364,6 +364,12 @@ max-width: 600px;
     width: 50px;
   }
   /* Lich su */
+<<<<<<< HEAD
+=======
+  .gioithieu-lichsu h2 {
+    margin-top: 30px;
+  }
+>>>>>>> 677181a841d4e01d7db973abef3791eb3e70a7d0
   .ls h2 {
     gap: 5px;
   }
