@@ -367,7 +367,10 @@ body {
   }
   .nd-ls p {
     width: 100%;
-    font-size: 18px;
+    font-size: 12px;
+    margin-top: 10x;
+  }
+  .nd {
     margin-top: 20px;
   }
 }
