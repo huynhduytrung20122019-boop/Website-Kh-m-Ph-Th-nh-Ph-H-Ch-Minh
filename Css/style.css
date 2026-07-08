@@ -278,7 +278,6 @@ body {
   text-decoration-color: #a1887f;
   text-underline-offset: 8px;
   margin-bottom: 20px;
-  
 }
 .tlc {
   margin-bottom: 20px;
@@ -287,9 +286,9 @@ body {
 
 /*Văn bản*/
 .stlistword {
-max-width: 600px;
- margin: 0 auto;
- color: #555555;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555555;
 }
 
 /*...*/
@@ -364,8 +363,8 @@ max-width: 600px;
     width: 50px;
   }
   /* Lich su */
-  .gioithieu-lichsu {
-    margin-top: 30px;
+  .gioithieu-lichsu h2 {
+    margin-top: 50px;
   }
   .ls h2 {
     gap: 5px;
