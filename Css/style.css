@@ -203,8 +203,8 @@ body {
   align-items: center;
   gap: 10px;
 }
-.ls p {
-  color: #ff3300;
+.ls h2 {
+  color: #ff3333;
 }
 .logobaner {
   width: 25px;
@@ -255,6 +255,7 @@ body {
   margin-top: 10px;
   border-radius: 20px;
 }
+
 /*...*/
 
 /* Css cho ẩm thực */
