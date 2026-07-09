@@ -367,9 +367,11 @@ body {
   .gioithieu-lichsu h2 {
     margin-top: 50px;
   }
+  .lichsu-banner h2 {
+    font-size: 10px;
+  }
   .ls h2 {
     gap: 5px;
-    font-size: 10px;
   }
   .logobaner {
     width: 25px;
