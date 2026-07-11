@@ -454,9 +454,10 @@ body {
     border-radius: 20px;
   }
   .sua-3anh {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: content;
+    justify-content: center;
     width: 100%;
   }
 }
