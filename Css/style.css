@@ -458,6 +458,22 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 50%;
+  }
+  .nam-1859 img {
     width: 100%;
+    height: 120px;
+    padding: 0 10px;
+    gap: 10px;
+  }
+  .nam-1954 img {
+    width: 100%;
+    height: 120px;
+    padding: 0 10px;
+    gap: 10px;
+  }
+  .sua {
+    width: 100%;
+    height: 120px;
   }
 }
