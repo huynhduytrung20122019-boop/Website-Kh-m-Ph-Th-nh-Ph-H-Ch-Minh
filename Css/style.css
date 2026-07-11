@@ -449,7 +449,6 @@ body {
   }
   /*Giai đoạn */
   .moc-ls img {
-    width: 60%;
     height: 150px;
     border-radius: 20px;
   }
@@ -466,7 +465,6 @@ body {
     gap: 10px;
     padding: 0 5px;
     max-width: 100%;
-    flex: 1;
   }
   .sua {
     display: flex;
