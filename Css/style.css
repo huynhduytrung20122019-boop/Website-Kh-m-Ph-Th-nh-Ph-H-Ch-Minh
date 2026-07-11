@@ -446,14 +446,16 @@ body {
     border-radius: 20px;
   }
   .sua-anh {
+    justify-content: center;
     width: 100%;
-    padding: 0 20px;
-    gap: 5px;
+    align-items: center;
   }
   .tk-18 img {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 5px;
+    padding: 0 5px;
   }
 }
