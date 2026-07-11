@@ -449,13 +449,15 @@ body {
     justify-content: center;
     width: 100%;
     align-items: center;
+    flex-wrap: wrap;
   }
   .tk-18 img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 100%;
     gap: 5px;
     padding: 0 5px;
+    flex-wrap: wrap;
   }
 }
