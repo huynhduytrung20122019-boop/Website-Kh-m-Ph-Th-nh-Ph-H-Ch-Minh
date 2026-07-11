@@ -439,4 +439,11 @@ body {
   .nd {
     margin-top: 20px;
   }
+  .sua-anh {
+    flex: 1;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
