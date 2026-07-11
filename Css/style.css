@@ -304,6 +304,14 @@ body {
   height: auto;
   object-fit: cover;
 }
+.sua-3anh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  max-width: 100%;
+  gap: 5px;
+}
 /*...*/
 
 /* Css cho ẩm thực */
@@ -444,20 +452,5 @@ body {
     width: 100%;
     height: 150px;
     border-radius: 20px;
-  }
-  .sua-anh {
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .tk-18 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 5px;
-    padding: 0 5px;
-    flex-wrap: wrap;
   }
 }
