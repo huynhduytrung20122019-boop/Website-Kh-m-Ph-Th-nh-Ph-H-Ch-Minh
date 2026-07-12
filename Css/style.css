@@ -272,7 +272,7 @@ body {
   margin-top: 20px;
   width: 60%;
   height: 300px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .sua-anh {
   display: flex;
@@ -311,6 +311,7 @@ body {
   padding: 0 10px;
   max-width: 100%;
   gap: 5px;
+  width: 100%;
 }
 /*...*/
 
@@ -468,6 +469,11 @@ body {
     gap: 10px;
     padding: 0 5px;
     max-width: 100%;
+  }
+  .sua-anh img {
+    flex: 1 1 calc(50% - 5px);
+    max-width: calc(50% - 5px);
+    height: 150px;
   }
   .sua {
     display: flex;
