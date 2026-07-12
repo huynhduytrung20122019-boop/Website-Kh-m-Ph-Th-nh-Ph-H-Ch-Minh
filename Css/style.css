@@ -460,9 +460,17 @@ body {
     padding: 0 40px;
   }
   .sua-anh {
-    width: 100%;
+    display: flex;
     gap: 10px;
-    padding: 0 40px;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .sua-anh img {
+    flex: 1;
+    min-width: 0;
+    height: 150px;
+    object-fit: cover;
   }
   .sua {
     display: flex;
