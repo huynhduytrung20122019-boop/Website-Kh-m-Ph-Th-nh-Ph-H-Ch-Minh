@@ -460,6 +460,9 @@ body {
     width: 100%;
     padding: 0 40px;
   }
+  .tk-18 img {
+    width: 100%;
+  }
   .sua-anh {
     width: 100%;
     gap: 10px;
