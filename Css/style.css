@@ -180,6 +180,15 @@ body {
   height: 70px;
   overflow: hidden;
   position: relative;
+  border: 1px solid #363636;
+  border-radius: 20px;
+  transition: 0.8s ease;
+  display: flex;
+  align-items: center;
+  background-color: #c6e2ff;
+}
+.ls-ls img:hover {
+  transform: transLateY(0.5);
 }
 
 .tieu-de-chay {
