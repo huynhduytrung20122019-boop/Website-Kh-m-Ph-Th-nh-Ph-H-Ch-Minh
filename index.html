@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang Chủ</title>
     <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   </head>
   <body>
     <header class="Menu">
@@ -30,7 +31,7 @@
     <main>
       <section class="noiDung">
         <!-- Nội dung về thành phố (Nguồn tài liệu Wiki) -->
-        <div>
+        <div data-aos="fade-left" data-aos-duration="2500">
           <h2>Tổng quan về TP HCM</h2>
           <ul>
             <li>
@@ -54,7 +55,7 @@
         </div>
         <br />
         <!--Văn hóa và con người-->
-        <div>
+        <div data-aos="fade-left" data-aos-duration="2500">
           <h2>Văn hóa và con người</h2>
           <ul>
             <li>
@@ -68,7 +69,7 @@
           </ul>
         </div>
         <!--Địa danh nổi tiếng-->
-        <div>
+        <div data-aos="fade-left" data-aos-duration="2500">
           <div class="DiaDanh-Amthuc">
             <div>
               <img src="image/Anh Du Lich/Anh1.jpg" alt="Nhà Thờ Đức Bà" />
@@ -128,4 +129,8 @@
       </div>
     </footer>
   </body>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

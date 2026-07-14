@@ -28,6 +28,12 @@ body {
 .Menu {
   background-color: #99ccff;
 }
+.Menu {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #99ccff;
+}
 .Menu-chinh a {
   position: relative; /* Bắt buộc phải có để định vị đường gạch dưới */
   text-decoration: none; /* Xóa dấu gạch dưới mặc định của trình duyệt */
