@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8fbff;
+  color: #222;
+}
+
+.Menu {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #99ccff;
+}
+
+.Menu-chinh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 12px 20px;
+  flex-wrap: wrap;
+}
+
+.Menu-chinh a {
+  text-decoration: none;
+  color: #111;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.Menu-chinh h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.Menu-chinh a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background-color: #33ffff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.Menu-chinh a:hover {
+  color: #ff0000;
+}
+
+.Menu-chinh a:hover::after {
+  transform: scaleX(1);
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.homepitr {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.tlc,
+.tlp,
+.stlistword {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.tlc {
+  margin-top: 24px;
+  color: #0f4c81;
+}
+
+.tlp {
+  color: #0b6b6b;
+  margin-top: 10px;
+}
+
+.stlistword {
+  max-width: 900px;
+  margin: 20px auto 30px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.tour-slider-section {
+  padding: 10px 20px 40px;
+}
+
+.slider-title {
+  text-align: center;
+  color: #0f4c81;
+  margin-bottom: 12px;
+}
+
+.tour-slider {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  padding: 10px;
+}
+
+.tour-track {
+  display: flex;
+  width: max-content;
+  animation: slide 18s linear infinite;
+}
+
+.tour-slide {
+  flex: 0 0 25%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.tour-slide img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+.tour-slider:hover .tour-track {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .Menu-chinh {
+    gap: 12px;
+  }
+
+  .homepitr {
+    height: 280px;
+  }
+
+  .tour-slide {
+    flex: 0 0 50%;
+  }
+
+  .tour-slide img {
+    height: 200px;
+  }
+}
