@@ -367,14 +367,6 @@ body {
 }
 /*...*/
 
-/* Css cho ẩm thực */
-
-
-/*...*/
-
-/* Css cho du lịch */
-/*.....*/
-
 /*Ảnh trang chủ*/
 .homepitr {
   width: 100%;
@@ -402,14 +394,6 @@ body {
   margin: 0 auto;
   color: #555555;
 }
-
-/*...*/
-
-/* Css cho văn hóa */
-/*...*/
-
-/* Css cho liên hệ */
-/*...*/
 
 /* Css dành cho điện thoại */
 @media (max-width: 576px) {
