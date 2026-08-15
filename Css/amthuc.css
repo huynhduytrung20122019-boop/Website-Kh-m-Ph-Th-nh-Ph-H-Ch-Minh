@@ -3,22 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   background-color: #fafafa;
   color: #333;
 }
+
 .Menu {
   background-color: #99ccff;
 }
+
 .Menu-chinh {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5%;
   cursor: pointer;
-  padding: 10px 0;
 }
 
 .logo {
@@ -35,6 +37,18 @@ body {
   padding-bottom: 10px;
   transition: all 0.3s ease;
 }
+
+/* Khắc phục lỗi hiển thị do Tailwind preflight ghi đè */
+.Menu-chinh a h1 {
+  font-size: 1.5em !important;
+  font-weight: bold !important;
+  margin: 0 !important;
+}
+
+.Menu-chinh img.logo {
+  display: inline !important;
+}
+
 .Menu-chinh a::after {
   content: "";
   position: absolute;
@@ -47,10 +61,12 @@ body {
   transform-origin: bottom left;
   transition: transform 0.3s ease-out;
 }
+
 .Menu-chinh a:hover {
   transform: scaleX(1.05);
   color: #ff0000;
 }
+
 .Menu-chinh a:hover::after {
   transform: scaleX(1);
 }
@@ -70,6 +86,7 @@ body {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -98,6 +115,7 @@ body {
     transform 0.4s ease;
   animation: fadeInUp 0.8s ease-out forwards;
 }
+
 .food-section:hover {
   background-color: #ffffff;
   transform: translateY(-5px);
@@ -109,11 +127,13 @@ body {
     opacity: 0;
     transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .food-name {
   display: flex;
   justify-content: center;
@@ -122,11 +142,13 @@ body {
   padding: 5px 20px;
   margin-top: 30px;
 }
+
 .food-name h2 span {
   transition:
     color 0.3s ease,
     text-shadow 0.3s ease;
 }
+
 .food-section:hover .food-name h2 span {
   color: #ff3b3b !important;
   text-shadow: 2px 2px 8px rgba(255, 59, 59, 0.3);
@@ -145,6 +167,7 @@ body {
     box-shadow 0.5s ease;
   cursor: pointer;
 }
+
 .food-name img:hover,
 .anhamthuc1:hover {
   transform: scale(1.06) translateY(-8px) rotate(1deg);
@@ -166,6 +189,7 @@ main p {
     color 0.3s ease,
     transform 0.3s ease;
 }
+
 .ingredient:hover {
   color: #111;
   transform: translateX(3px);
@@ -181,16 +205,19 @@ main p {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: all 0.4s ease;
 }
+
 .conclusion-section:hover {
   transform: translateY(-8px) scale(1.01);
   box-shadow: 0 15px 30px rgba(211, 47, 47, 0.15);
   border-left-color: #ff3b3b;
 }
+
 .conclusion-section h3 {
   color: #d32f2f;
   font-size: 24px;
   margin-bottom: 15px;
 }
+
 .conclusion-section p {
   margin-bottom: 12px;
   font-style: italic;
@@ -203,6 +230,7 @@ main p {
   padding-top: 40px;
   margin-top: 60px;
 }
+
 .footer-content {
   max-width: 1000px;
   margin: 0 auto;
@@ -211,44 +239,73 @@ main p {
   padding: 0 20px 30px;
   gap: 40px;
 }
+
 .footer-info {
   flex: 2;
 }
+
 .footer-info h3 {
   font-size: 22px;
   margin-bottom: 15px;
   color: #99ccff;
 }
+
 .footer-info p {
   color: #bdc3c7;
   font-size: 14px;
 }
+
 .footer-links {
   flex: 1;
 }
+
 .footer-links h4 {
   font-size: 18px;
   margin-bottom: 15px;
   color: #99ccff;
 }
+
 .footer-links ul {
   list-style: none;
 }
+
 .footer-links li {
   margin-bottom: 8px;
 }
+
 .footer-links a {
   color: #bdc3c7;
   text-decoration: none;
   transition: color 0.3s;
 }
+
 .footer-links a:hover {
   color: #33ffff;
 }
+
 .footer-bottom {
   background-color: #111820;
   text-align: center;
   padding: 15px 0;
   font-size: 13px;
   color: #7f8c8d;
+}
+
+/* CSS dành cho điện thoại */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px 20px;
+    text-align: center;
+  }
+  .food-name {
+    flex-direction: column;
+    text-align: center;
+  }
+  .food-name img,
+  .anhamthuc1 {
+    width: 100%;
+    height: auto;
+  }
 }

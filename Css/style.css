@@ -401,9 +401,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     cursor: pointer;
     flex-wrap: wrap;
+  }
+  .Menu-chinh a h1 {
+    font-size: 1.1em !important; /* Thu nhỏ chữ trên màn hình nhỏ */
   }
   .logo {
     width: 10%;
@@ -425,38 +428,50 @@ body {
     font-size: 15px;
   }
   .DiaDanh-Amthuc {
-    flex: 0 0 calc(50%-8px);
-    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .DiaDanh-Amthuc > div {
+    width: 100%;
+    margin-bottom: 20px;
   }
   .DiaDanh-Amthuc p {
     text-align: center;
-    font-size: 19px;
+    font-size: 17px;
     white-space: normal;
   }
   .DiaDanh-Amthuc img {
     border-radius: 15px;
     width: 100%;
-    height: 100px;
+    height: 200px;
     object-fit: cover;
   }
   .lienhe-form {
     display: flex;
-    justify-content: space-between;
-    border: 5px solid black;
-    padding: 20px 20px;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    padding: 20px;
     background-color: #ffffcc;
   }
+  .lienhe {
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
   .lienhe-form input {
-    margin-top: 20px;
-    width: 80%;
-    height: 20px;
-    padding-left: 10px;
-    padding: 20px 10px;
-    border-radius: 15px;
-    flex-wrap: wrap;
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+    border-radius: 10px;
   }
   .lienhe-form button {
-    width: 50px;
+    width: 100px;
+    margin-top: 15px;
+    height: 40px;
   }
   /* Lich su */
   .gioithieu-lichsu h2 {
@@ -474,17 +489,23 @@ body {
     border-radius: 20px;
     object-fit: cover;
   }
+  .nd-ls {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px;
+  }
   .nd-ls img {
     width: 100%;
+    height: auto;
     object-fit: cover;
   }
   .nd-ls p {
     width: 100%;
-    font-size: 15px;
-    margin-top: 10x;
+    font-size: 16px;
+    margin-top: 10px;
   }
   .nd {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .aa {
     height: 150px;
