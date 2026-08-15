@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khám phá ẩm thực Sài Gòn với các món ăn đặc trưng như cơm tấm, bánh mì, bò né." />
+  <meta name="keywords" content="ẩm thực Sài Gòn, cơm tấm, bánh mì, bò né, món ngon TP HCM" />
   <title>Ẩm Thực Sài Gòn</title>
   <link rel="stylesheet" href="Css/amthuc.css">
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
 
@@ -16,11 +20,10 @@
       <a href="amthuc.html"><h1>Ẩm thực</h1></a>
       <a href="dulich.html"><h1>Du lịch</h1></a>
       <a href="vanhoa.html"><h1>Văn Hóa</h1></a>
-      <a href="lienhe.html"><h1>Liên Hệ</h1></a>
     </nav>
   </header>
 
-  <img class="header-image" src="image/ANH AM THUC/food.jpg" alt="Ẩm thực Sài Gòn"/>
+  <img data-aos="fade" data-aos-duration="2500" class="header-image" src="image/Anh Am Thuc/food.jfif" alt="Ẩm thực Sài Gòn"/>
 
   <h1 class="tieu-de-cuon-hut">Travelling to Sai Gon, have you tried the city's signature dishes?</h1>
 
@@ -74,7 +77,7 @@
     <section class="food-section">
       <div class="food-name">
         <h2>3. <span style="color: #d32f2f; font-weight: bold;">BÒ NÉ SÀI GÒN</span></h2>
-        <img class="anhamthuc1" src="image/Anh Am Thuc/bone.jpg" alt="Bò né Sài Gòn" />
+        <img class="anhamthuc1" src="image/Anh Am Thuc/BoNe.jfif" alt="Bò né Sài Gòn" />
       </div>
       <p class="ingredient">Nếu bánh mì là món ăn nhanh gọn cầm tay thì Bò Né lại là lựa chọn hoàn hảo cho một bữa sáng hoặc bữa tối nóng hổi, giàu năng lượng. Tên gọi "bò né" độc đáo xuất phát từ việc khi chảo bít tết vừa được mang ra, dầu mỡ vẫn còn xèo xèo bắn tí tách, khiến thực khách phải... "né" nhẹ ra để tránh bị bắn vào người.</p>
       <p class="ingredient">Một chảo bò né nóng hổi chuẩn vị thường bao gồm các thành phần hấp dẫn:</p>
@@ -87,7 +90,7 @@
 
     <section class="food-section">
       <div class="food-name">
-        <img src="image/Anh Am Thuc/caphesua.jpg" alt="Cà phê sữa đá Sài Gòn" />
+        <img src="image/Anh Am Thuc/cafe.jfif" alt="Cà phê sữa đá Sài Gòn" />
         <h2>4. <span style="color: #d32f2f; font-weight: bold;">CÀ PHÊ SỮA ĐÁ SÀI GÒN</span></h2>
       </div>
       <p class="ingredient">Dù không phải là một món ăn dùng để no bụng, Cà Phê Sữa Đá lại là "thức uống quốc dân" và là mảnh ghép không thể thiếu trong bức tranh ẩm thực Sài Gòn. Không chỉ là thức uống giải khát giữa tiết trời nắng nóng quanh năm, nhâm nhi ly cà phê sáng còn là một nét văn hóa, một nhịp sống đậm chất người phương Nam.</p>
@@ -126,5 +129,12 @@
       <p>&copy; 2026 Khám Phá Sài Gòn.</p>
     </div>
   </footer>
+  <button id="scrollTopBtn" title="Lên đầu trang">&#8679;</button>
+  <script src="Java/java.js"></script>
 </body>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    once: true;
+  </script>
 </html>
