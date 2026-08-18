@@ -549,3 +549,136 @@ body {
     font-size: 12px;
   }
 }
+
+/* ========================================= */
+/* CSS CHO MOBILE MENU TÍCH HỢP              */
+/* ========================================= */
+
+/* Header trên Mobile */
+.mobile-header {
+    background-color: #99ccff; /* Chỉnh màu trùng với header desktop */
+    padding: 10px 20px;
+    display: none; /* Ẩn mặc định, chỉ hiện trên mobile */
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.mobile-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+/* Nút Hamburger (3 gạch) */
+.hamburger-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+    padding: 0;
+}
+
+.hamburger-btn .line {
+    width: 100%;
+    height: 3px;
+    background-color: #333; /* Màu gạch đậm để dễ nhìn trên nền #99ccff */
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Menu Sidebar */
+.mobile-menu-sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 75%;
+    max-width: 320px;
+    height: 100vh;
+    background-color: #dbdbdb;
+    z-index: 1001;
+    transition: left 0.3s ease-in-out;
+    overflow-y: auto;
+    box-shadow: 2px 0px 8px rgba(0,0,0,0.3);
+}
+
+.mobile-menu-sidebar.active {
+    left: 0;
+}
+
+.menu-header {
+    background-color: #0b78d0;
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-list {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.menu-list li {
+    position: relative;
+    border-bottom: 1px solid #ccc; /* Thêm gạch dưới các item cho đẹp */
+}
+
+.menu-list li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-list li a:active {
+    background-color: #c4c8cc;
+}
+
+/* Lớp phủ (Overlay) làm tối phần còn lại của trang */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .Menu {
+        display: none !important; /* Ẩn menu desktop */
+    }
+    .mobile-header {
+        display: flex !important; /* Hiện mobile header */
+    }
+}
+@media screen and (min-width: 769px) {
+    .mobile-header, .mobile-menu-sidebar, .menu-overlay {
+        display: none !important;
+    }
+}

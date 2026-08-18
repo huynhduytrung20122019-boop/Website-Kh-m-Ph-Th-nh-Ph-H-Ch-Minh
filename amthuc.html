@@ -1,140 +1,396 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Khám phá ẩm thực Sài Gòn với các món ăn đặc trưng như cơm tấm, bánh mì, bò né." />
-  <meta name="keywords" content="ẩm thực Sài Gòn, cơm tấm, bánh mì, bò né, món ngon TP HCM" />
-  <title>Ẩm Thực Sài Gòn</title>
-  <link rel="stylesheet" href="Css/amthuc.css">
-  <link rel="stylesheet" href="Css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-  <script>
-    tailwind.config = {
-      corePlugins: {
-        preflight: false,
-      }
-    }
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Khám phá ẩm thực Sài Gòn với các món ăn đặc trưng như cơm tấm, bánh mì, bò né."
+    />
+    <meta
+      name="keywords"
+      content="ẩm thực Sài Gòn, cơm tấm, bánh mì, bò né, món ngon TP HCM"
+    />
+    <title>Ẩm Thực Sài Gòn</title>
+    <link rel="stylesheet" href="Css/amthuc.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script>
+      tailwind.config = {
+        corePlugins: {
+          preflight: false,
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="Menu">
+      <nav class="Menu-chinh">
+        <img class="logo" src="image/logo.png" alt="Logo" />
+        <a href="index.html"><h1>Trang chủ</h1></a>
+        <a href="lichsu.html"><h1>Lịch sử</h1></a>
+        <a href="amthuc.html"><h1>Ẩm thực</h1></a>
+        <a href="dulich.html"><h1>Du lịch</h1></a>
+        <a href="vanhoa.html"><h1>Văn Hóa</h1></a>
+      </nav>
+    </header>
 
-  <header class="Menu">
-    <nav class="Menu-chinh">
-      <img class="logo" src="image/logo.png" alt="Logo" />
-      <a href="index.html"><h1>Trang chủ</h1></a>
-      <a href="lichsu.html"><h1>Lịch sử</h1></a>
-      <a href="amthuc.html"><h1>Ẩm thực</h1></a>
-      <a href="dulich.html"><h1>Du lịch</h1></a>
-      <a href="vanhoa.html"><h1>Văn Hóa</h1></a>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <div class="logo">
+        <img
+          class="logo"
+          src="image/logo.png"
+          alt="Logo"
+          style="width: 40px; height: 40px"
+        />
+      </div>
+      <div class="header-actions">
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Lá»›p phá»§ tá»‘i má» (Overlay) -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Menu trÆ°á»£t tá»« bÃªn trÃ¡i -->
+    <nav class="mobile-menu-sidebar" id="mobileMenuSidebar">
+      <div class="menu-header">DANH Má»¤C</div>
+      <ul class="menu-list">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="lichsu.html">Lịch Sử­</a></li>
+        <li><a href="amthuc.html">Ẩm thực</a></li>
+        <li><a href="dulich.html">Du Lịch</a></li>
+        <li><a href="vanhoa.html">Văn Hóa</a></li>
+      </ul>
     </nav>
-  </header>
 
-  <img data-aos="fade" data-aos-duration="2500" class="header-image" src="image/Anh Am Thuc/food.jfif" alt="Ẩm thực Sài Gòn"/>
+    <img
+      data-aos="fade"
+      data-aos-duration="2500"
+      class="header-image"
+      src="image/Anh Am Thuc/food.jfif"
+      alt="Ẩm thực Sài Gòn"
+    />
 
-  <h1 class="tieu-de-cuon-hut">Travelling to Sai Gon, have you tried the city's signature dishes?</h1>
+    <h1 class="tieu-de-cuon-hut">
+      Travelling to Sai Gon, have you tried the city's signature dishes?
+    </h1>
 
-  <main>
-    <section class="relative group bg-white hover:bg-orange-50 rounded-3xl p-6 md:p-8 shadow-md hover:shadow-2xl transition-all duration-500 ease-in-out hover:-translate-y-2 border border-solid border-gray-100 hover:border-orange-300 mb-16 mx-4 md:mx-auto max-w-5xl overflow-hidden" data-aos="fade-up">
-      <div class="absolute top-0 left-0 bg-red-600 text-white text-sm font-bold px-6 py-2 rounded-br-2xl rounded-tl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md z-10">✨ Món Ngon Đặc Trưng</div>
-      <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-6 relative">
-        <h2 class="text-3xl md:text-4xl text-gray-800 group-hover:text-red-600 transition-colors duration-300 z-10 font-bold">1. <span class="text-[#d32f2f] font-extrabold drop-shadow-sm">CƠM TẤM SƯỜN BÌ CHẢ</span></h2> 
-        <div class="overflow-hidden rounded-2xl shadow-lg group-hover:shadow-red-500/40 transition-shadow duration-500 flex-shrink-0">
-          <img class="w-full md:w-[450px] h-[360px] object-cover transform group-hover:scale-110 group-hover:rotate-2 transition-transform duration-700 ease-out cursor-pointer" src="image/Anh Am Thuc/comtam.jpg" alt="Cơm tấm sườn bì chả" />
+    <main>
+      <section
+        class="relative group bg-white hover:bg-orange-50 rounded-3xl p-6 md:p-8 shadow-md hover:shadow-2xl transition-all duration-500 ease-in-out hover:-translate-y-2 border border-solid border-gray-100 hover:border-orange-300 mb-16 mx-4 md:mx-auto max-w-5xl overflow-hidden"
+        data-aos="fade-up"
+      >
+        <div
+          class="absolute top-0 left-0 bg-red-600 text-white text-sm font-bold px-6 py-2 rounded-br-2xl rounded-tl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md z-10"
+        >
+          ✨ Món Ngon Đặc Trưng
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center justify-center gap-8 mb-6 relative"
+        >
+          <h2
+            class="text-3xl md:text-4xl text-gray-800 group-hover:text-red-600 transition-colors duration-300 z-10 font-bold"
+          >
+            1.
+            <span class="text-[#d32f2f] font-extrabold drop-shadow-sm"
+              >CƠM TẤM SƯỜN BÌ CHẢ</span
+            >
+          </h2>
+          <div
+            class="overflow-hidden rounded-2xl shadow-lg group-hover:shadow-red-500/40 transition-shadow duration-500 flex-shrink-0"
+          >
+            <img
+              class="w-full md:w-[450px] h-[360px] object-cover transform group-hover:scale-110 group-hover:rotate-2 transition-transform duration-700 ease-out cursor-pointer"
+              src="image/Anh Am Thuc/comtam.jpg"
+              alt="Cơm tấm sườn bì chả"
+            />
+          </div>
+        </div>
+        <p class="ingredient">
+          Nếu có một món ăn mà bất kỳ ai đến Sài Gòn cũng phải thử ít nhất một
+          lần, đó chắc chắn là Cơm Tấm. Từ những hàng quán vỉa hè nghi ngút khói
+          cho đến các nhà hàng sang trọng, món ăn này sở hữu một sức hút kỳ lạ
+          nhờ hương vị hài hòa, dễ ăn và vô cùng nịnh miệng đối với thực khách
+          muôn phương.
+        </p>
+        <p class="ingredient">
+          Một đĩa cơm tấm "full topping" truyền thống bao gồm các thành phần
+          không thể thiếu:
+        </p>
+        <p class="ingredient">
+          + <strong>Cơm tấm:</strong> Hạt cơm nấu từ gạo tấm dẻo, tơi, khi chín
+          thường được rưới thêm chút mỡ hành béo ngậy.
+        </p>
+        <p class="ingredient">
+          + <strong>Sườn heo nướng:</strong> Sườn được ướp với mật ong, nước mắm
+          và gia vị theo công thức bí truyền, nướng trên bếp than hồng cho đến
+          khi cháy cạnh, tỏa hương thơm lừng.
+        </p>
+        <p class="ingredient">
+          + <strong>Chả trứng:</strong> Làm từ thịt băm, trứng, nấm mèo và miến,
+          được hấp chín cắt miếng.
+        </p>
+        <p class="ingredient">
+          + <strong>Bì heo:</strong> Da heo luộc chín cắt sợi, trộn cùng thính
+          gạo, tỏi và gia vị.
+        </p>
+        <p class="ingredient">
+          + <strong>Đồ chua:</strong> Cà rốt và củ cải trắng ngâm chua ngọt giúp
+          giảm độ ngấy.
+        </p>
+        <p class="ingredient">
+          + <strong>Nước chấm:</strong> Linh hồn của đĩa cơm tấm, là loại nước
+          mắm kẹo (độ sệt nhất định) pha cùng đường, tỏi và ớt.
+        </p>
+      </section>
+      <section
+        class="relative group bg-white hover:bg-yellow-50 rounded-3xl p-6 md:p-8 shadow-md hover:shadow-2xl transition-all duration-500 ease-in-out hover:-translate-y-2 border border-solid border-gray-100 hover:border-yellow-400 mb-16 mx-4 md:mx-auto max-w-5xl overflow-hidden"
+        data-aos="fade-up"
+      >
+        <div
+          class="absolute top-0 right-0 bg-yellow-500 text-white text-sm font-bold px-6 py-2 rounded-bl-2xl rounded-tr-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md z-10"
+        >
+          🔥 Bữa Sáng Tiện Lợi
+        </div>
+        <div
+          class="flex flex-col-reverse md:flex-row items-center justify-center gap-8 mb-6 relative"
+        >
+          <div
+            class="overflow-hidden rounded-2xl shadow-lg group-hover:shadow-yellow-500/40 transition-shadow duration-500 flex-shrink-0"
+          >
+            <img
+              class="w-full md:w-[450px] h-[360px] object-cover transform group-hover:scale-110 group-hover:-rotate-2 transition-transform duration-700 ease-out cursor-pointer"
+              src="image/Anh Am Thuc/banhmi.jpg"
+              alt="Bánh mì Sài Gòn"
+            />
+          </div>
+          <h2
+            class="text-3xl md:text-4xl text-gray-800 group-hover:text-yellow-600 transition-colors duration-300 z-10 font-bold"
+          >
+            2.
+            <span class="text-[#d32f2f] font-extrabold drop-shadow-sm"
+              >BÁNH MÌ SÀI GÒN</span
+            >
+          </h2>
+        </div>
+        <p class="ingredient">
+          Không cầu kỳ, không đắt đỏ, ổ bánh mì Sài Gòn gói gọn cả một sự tinh
+          tế trong ẩm thực vào một món ăn "cầm tay" tiện lợi. Giữa nhịp sống hối
+          hả, những chiếc xe bánh mì bên vỉa hè từ lâu đã trở thành món ăn sáng
+          quen thuộc, đồng hành cùng người dân thành phố bắt đầu một ngày mới.
+        </p>
+        <p class="ingredient">
+          Một ổ bánh mì đầy đủ chuẩn vị Sài Gòn mang lại sự kết hợp hài hòa giữa
+          các nguyên liệu:
+        </p>
+        <p class="ingredient">
+          + <strong>Vỏ bánh:</strong> Luôn được nướng giòn rụm bên ngoài nhưng
+          bên trong vẫn giữ được độ xốp mềm, thơm mùi bột mì nướng đặc trưng.
+        </p>
+        <p class="ingredient">
+          + <strong>Nhân bánh:</strong> Là sự hòa quyện giữa vị béo ngậy của
+          pa-tê gan mịn và sốt bơ trứng gà tự đánh, ăn kèm với các loại chả lụa
+          dai giòn, thịt nguội hoặc thịt xá xíu đậm đà.
+        </p>
+        <p class="ingredient">
+          + <strong>Rau ăn kèm:</strong> Ngò rí thơm nhẹ, dưa leo tươi mát và đồ
+          chua muối chua ngọt giúp cân bằng lại vị béo của thịt mỡ. Cuối cùng,
+          một chút nước tương cùng vài lát ớt tươi sẽ làm dậy lên hương vị đậm
+          đà vốn có.
+        </p>
+        <p class="ingredient">
+          Ngày nay, Bánh mì Sài Gòn không chỉ dừng lại ở nhân thịt chả truyền
+          thống mà còn vô cùng đa dạng với bánh mì xíu mại trứng muối, bánh mì
+          heo quay giòn rụm, hay bánh mì phá lấu đậm đà. Dù ở bất kỳ biến tấu
+          nào, món ăn này vẫn giữ trọn sự tiện lợi và sức hút khó cưỡng.
+        </p>
+        <p class="ingredient">
+          Cắn một miếng bánh mì Sài Gòn, bạn sẽ cảm nhận được đủ năm vị: mặn,
+          ngọt, chua, cay, béo ngậy hòa quyện hài hòa. Đó không chỉ là món ăn,
+          đó là cái hồn của đường phố Sài Gòn – phóng khoáng, nồng nhiệt và đầy
+          mê hoặc.
+        </p>
+      </section>
+
+      <section
+        class="relative group bg-white hover:bg-red-50 rounded-3xl p-6 md:p-8 shadow-md hover:shadow-2xl transition-all duration-500 ease-in-out hover:-translate-y-2 border border-solid border-gray-100 hover:border-red-400 mb-16 mx-4 md:mx-auto max-w-5xl overflow-hidden"
+        data-aos="fade-up"
+      >
+        <div
+          class="absolute top-0 left-0 bg-red-700 text-white text-sm font-bold px-6 py-2 rounded-br-2xl rounded-tl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md z-10"
+        >
+          🥩 Năng Lượng Ngập Tràn
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center justify-center gap-8 mb-6 relative"
+        >
+          <h2
+            class="text-3xl md:text-4xl text-gray-800 group-hover:text-red-700 transition-colors duration-300 z-10 font-bold"
+          >
+            3.
+            <span class="text-[#d32f2f] font-extrabold drop-shadow-sm"
+              >BÒ NÉ SÀI GÒN</span
+            >
+          </h2>
+          <div
+            class="overflow-hidden rounded-2xl shadow-lg group-hover:shadow-red-500/40 transition-shadow duration-500 flex-shrink-0"
+          >
+            <img
+              class="w-full md:w-[450px] h-[360px] object-cover transform group-hover:scale-110 group-hover:rotate-2 transition-transform duration-700 ease-out cursor-pointer"
+              src="image/Anh Am Thuc/BoNe.jfif"
+              alt="Bò né Sài Gòn"
+            />
+          </div>
+        </div>
+        <p class="ingredient">
+          Nếu bánh mì là món ăn nhanh gọn cầm tay thì Bò Né lại là lựa chọn hoàn
+          hảo cho một bữa sáng hoặc bữa tối nóng hổi, giàu năng lượng. Tên gọi
+          "bò né" độc đáo xuất phát từ việc khi chảo bít tết vừa được mang ra,
+          dầu mỡ vẫn còn xèo xèo bắn tí tách, khiến thực khách phải... "né" nhẹ
+          ra để tránh bị bắn vào người.
+        </p>
+        <p class="ingredient">
+          Một chảo bò né nóng hổi chuẩn vị thường bao gồm các thành phần hấp
+          dẫn:
+        </p>
+        <p class="ingredient">
+          + <strong>Thịt bò mềm:</strong> Những miếng thịt bò đùi hoặc thăn tươi
+          ngon được cắt xắn vừa ăn, ướp đậm đà và làm chín nhanh trên chảo gang
+          xèo xèo lửa lớn.
+        </p>
+        <p class="ingredient">
+          + <strong>Trứng ốp la:</strong> Trứng gà thả vào chảo gang nóng đun
+          vừa chín tới, lòng đỏ còn sánh dẻo béo ngậy.
+        </p>
+        <p class="ingredient">
+          + <strong>Topping ăn kèm:</strong> Thường có thêm pa-tê gan béo ngậy,
+          xúc xích, xíu mại hoặc phô mai miếng tùy theo sở thích.
+        </p>
+        <p class="ingredient">
+          + <strong>Bánh mì & Rau tươi:</strong> Ăn kèm ổ bánh mì giòn rụm để
+          chấm xốt bò và lòng đỏ trứng, kết hợp cùng dưa leo, xà lách, hành tây
+          cho bớt ngấy.
+        </p>
+        <p class="ingredient">
+          Thưởng thức bò né khi chảo còn nghi ngút khói, chấm miếng bánh mì giòn
+          vào lớp nước xốt bò đậm đà hòa quyện cùng vị béo của lòng đỏ trứng là
+          một trải nghiệm ẩm thực vô cùng thú vị.
+        </p>
+      </section>
+
+      <section
+        class="relative group bg-white hover:bg-stone-50 rounded-3xl p-6 md:p-8 shadow-md hover:shadow-2xl transition-all duration-500 ease-in-out hover:-translate-y-2 border border-solid border-gray-100 hover:border-stone-400 mb-16 mx-4 md:mx-auto max-w-5xl overflow-hidden"
+        data-aos="fade-up"
+      >
+        <div
+          class="absolute top-0 right-0 bg-stone-700 text-white text-sm font-bold px-6 py-2 rounded-bl-2xl rounded-tr-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md z-10"
+        >
+          ☕ Thức Uống Quốc Dân
+        </div>
+        <div
+          class="flex flex-col-reverse md:flex-row items-center justify-center gap-8 mb-6 relative"
+        >
+          <div
+            class="overflow-hidden rounded-2xl shadow-lg group-hover:shadow-stone-500/40 transition-shadow duration-500 flex-shrink-0"
+          >
+            <img
+              class="w-full md:w-[450px] h-[360px] object-cover transform group-hover:scale-110 group-hover:-rotate-2 transition-transform duration-700 ease-out cursor-pointer"
+              src="image/Anh Am Thuc/cafe.jfif"
+              alt="Cà phê sữa đá Sài Gòn"
+            />
+          </div>
+          <h2
+            class="text-3xl md:text-4xl text-gray-800 group-hover:text-stone-700 transition-colors duration-300 z-10 font-bold"
+          >
+            4.
+            <span class="text-[#d32f2f] font-extrabold drop-shadow-sm"
+              >CÀ PHÊ SỮA ĐÁ SÀI GÒN</span
+            >
+          </h2>
+        </div>
+        <p class="ingredient">
+          Dù không phải là một món ăn dùng để no bụng, Cà Phê Sữa Đá lại là
+          "thức uống quốc dân" và là mảnh ghép không thể thiếu trong bức tranh
+          ẩm thực Sài Gòn. Không chỉ là thức uống giải khát giữa tiết trời nắng
+          nóng quanh năm, nhâm nhi ly cà phê sáng còn là một nét văn hóa, một
+          nhịp sống đậm chất người phương Nam.
+        </p>
+        <p class="ingredient">
+          Sự tinh tế quyến rũ nằm trong ly cà phê sữa đá truyền thống:
+        </p>
+        <p class="ingredient">
+          + <strong>Cà phê phin đậm đà:</strong> Được chắt lọc từng giọt từ bột
+          cà phê Robusta nguyên chất mộc mạc, mang lại hương vị đắng nhẹ và thơm
+          nồng đặc trưng.
+        </p>
+        <p class="ingredient">
+          + <strong>Sữa đặc ngọt ngào:</strong> Lớp sữa đặc béo ngậy nằm dưới
+          đáy ly, khi khuấy đều với cà phê phin nóng sẽ tạo nên màu nâu sóng
+          sánh bắt mắt.
+        </p>
+        <p class="ingredient">
+          + <strong>Đá viên mát lạnh:</strong> Thêm những viên đá trong vắt giúp
+          làm dịu độ ngọt đắng, mang lại cảm giác sảng khoái tức thì.
+        </p>
+        <p class="ingredient">
+          Từ những quán cà phê bệt vỉa hè giản dị cho đến các không gian sang
+          trọng, ly cà phê sữa đá với hương vị đắng dịu hòa cùng vị ngọt béo
+          luôn biết cách níu chân bất kỳ ai từng một lần ghé qua mảnh đất này.
+        </p>
+      </section>
+
+      <section class="conclusion-section">
+        <h3>Lời Kết Cho Hành Trình Ẩm Thực</h3>
+        <p>
+          Ẩm thực Sài Gòn không chỉ dừng lại ở hương vị, mà đó còn là câu chuyện
+          về sự giao thoa văn hóa, sự hào sảng và mến khách của con người nơi
+          đây. Mỗi món ăn là một mảng màu rực rỡ tạo nên bức tranh nhịp sống
+          sống động của thành phố mang tên Bác.
+        </p>
+        <p>
+          Nếu bạn có dịp ghé thăm Sài Gòn, hãy dành thời gian để tản bộ qua
+          những con hẻm nhỏ, ngồi ở một quán vỉa hè và tự mình thưởng thức những
+          hương vị đặc trưng này nhé!
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>Khám Phá Sài Gòn</h3>
+          <p>
+            Website chia sẻ vẻ đẹp văn hóa, lịch sử và ẩm thực đặc sắc của Sài
+            Gòn - TP. Hồ Chí Minh.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Danh Mục</h4>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="lichsu.html">Lịch sử</a></li>
+            <li><a href="amthuc.html">Ẩm thực</a></li>
+            <li><a href="dulich.html">Du lịch</a></li>
+            <li><a href="vanhoa.html">Văn hóa</a></li>
+          </ul>
         </div>
       </div>
-      <p class="ingredient">Nếu có một món ăn mà bất kỳ ai đến Sài Gòn cũng phải thử ít nhất một lần, đó chắc chắn là Cơm Tấm. Từ những hàng quán vỉa hè nghi ngút khói cho đến các nhà hàng sang trọng, món ăn này sở hữu một sức hút kỳ lạ nhờ hương vị hài hòa, dễ ăn và vô cùng nịnh miệng đối với thực khách muôn phương.</p>
-      <p class="ingredient">Một đĩa cơm tấm "full topping" truyền thống bao gồm các thành phần không thể thiếu:</p>
-      <p class="ingredient">+ <strong>Cơm tấm:</strong> Hạt cơm nấu từ gạo tấm dẻo, tơi, khi chín thường được rưới thêm chút mỡ hành béo ngậy.</p>
-      <p class="ingredient">+ <strong>Sườn heo nướng:</strong> Sườn được ướp với mật ong, nước mắm và gia vị theo công thức bí truyền, nướng trên bếp than hồng cho đến khi cháy cạnh, tỏa hương thơm lừng.</p>
-      <p class="ingredient">+ <strong>Chả trứng:</strong> Làm từ thịt băm, trứng, nấm mèo và miến, được hấp chín cắt miếng.</p>
-      <p class="ingredient">+ <strong>Bì heo:</strong> Da heo luộc chín cắt sợi, trộn cùng thính gạo, tỏi và gia vị.</p>
-      <p class="ingredient">+ <strong>Đồ chua:</strong> Cà rốt và củ cải trắng ngâm chua ngọt giúp giảm độ ngấy.</p>
-      <p class="ingredient">+ <strong>Nước chấm:</strong> Linh hồn của đĩa cơm tấm, là loại nước mắm kẹo (độ sệt nhất định) pha cùng đường, tỏi và ớt.</p>
-    </section>
-    <section class="relative group bg-white hover:bg-yellow-50 rounded-3xl p-6 md:p-8 shadow-md hover:shadow-2xl transition-all duration-500 ease-in-out hover:-translate-y-2 border border-solid border-gray-100 hover:border-yellow-400 mb-16 mx-4 md:mx-auto max-w-5xl overflow-hidden" data-aos="fade-up">
-      <div class="absolute top-0 right-0 bg-yellow-500 text-white text-sm font-bold px-6 py-2 rounded-bl-2xl rounded-tr-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md z-10">🔥 Bữa Sáng Tiện Lợi</div>
-      <div class="flex flex-col-reverse md:flex-row items-center justify-center gap-8 mb-6 relative">
-        <div class="overflow-hidden rounded-2xl shadow-lg group-hover:shadow-yellow-500/40 transition-shadow duration-500 flex-shrink-0">
-          <img class="w-full md:w-[450px] h-[360px] object-cover transform group-hover:scale-110 group-hover:-rotate-2 transition-transform duration-700 ease-out cursor-pointer" src="image/Anh Am Thuc/banhmi.jpg" alt="Bánh mì Sài Gòn" />
-        </div>
-        <h2 class="text-3xl md:text-4xl text-gray-800 group-hover:text-yellow-600 transition-colors duration-300 z-10 font-bold">2. <span class="text-[#d32f2f] font-extrabold drop-shadow-sm">BÁNH MÌ SÀI GÒN</span></h2>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Khám Phá Sài Gòn.</p>
       </div>
-      <p class="ingredient">Không cầu kỳ, không đắt đỏ, ổ bánh mì Sài Gòn gói gọn cả một sự tinh tế trong ẩm thực vào một món ăn "cầm tay" tiện lợi. Giữa nhịp sống hối hả, những chiếc xe bánh mì bên vỉa hè từ lâu đã trở thành món ăn sáng quen thuộc, đồng hành cùng người dân thành phố bắt đầu một ngày mới.</p>
-      <p class="ingredient">Một ổ bánh mì đầy đủ chuẩn vị Sài Gòn mang lại sự kết hợp hài hòa giữa các nguyên liệu:</p>
-      <p class="ingredient">+ <strong>Vỏ bánh:</strong> Luôn được nướng giòn rụm bên ngoài nhưng bên trong vẫn giữ được độ xốp mềm, thơm mùi bột mì nướng đặc trưng.</p>
-      <p class="ingredient">+ <strong>Nhân bánh:</strong> Là sự hòa quyện giữa vị béo ngậy của pa-tê gan mịn và sốt bơ trứng gà tự đánh, ăn kèm với các loại chả lụa dai giòn, thịt nguội hoặc thịt xá xíu đậm đà.</p>
-      <p class="ingredient">+ <strong>Rau ăn kèm:</strong> Ngò rí thơm nhẹ, dưa leo tươi mát và đồ chua muối chua ngọt giúp cân bằng lại vị béo của thịt mỡ. Cuối cùng, một chút nước tương cùng vài lát ớt tươi sẽ làm dậy lên hương vị đậm đà vốn có.</p>
-      <p class="ingredient">Ngày nay, Bánh mì Sài Gòn không chỉ dừng lại ở nhân thịt chả truyền thống mà còn vô cùng đa dạng với bánh mì xíu mại trứng muối, bánh mì heo quay giòn rụm, hay bánh mì phá lấu đậm đà. Dù ở bất kỳ biến tấu nào, món ăn này vẫn giữ trọn sự tiện lợi và sức hút khó cưỡng.</p>
-      <p class="ingredient">Cắn một miếng bánh mì Sài Gòn, bạn sẽ cảm nhận được đủ năm vị: mặn, ngọt, chua, cay, béo ngậy hòa quyện hài hòa. Đó không chỉ là món ăn, đó là cái hồn của đường phố Sài Gòn – phóng khoáng, nồng nhiệt và đầy mê hoặc.</p>
-    </section>
-
-    <section class="relative group bg-white hover:bg-red-50 rounded-3xl p-6 md:p-8 shadow-md hover:shadow-2xl transition-all duration-500 ease-in-out hover:-translate-y-2 border border-solid border-gray-100 hover:border-red-400 mb-16 mx-4 md:mx-auto max-w-5xl overflow-hidden" data-aos="fade-up">
-      <div class="absolute top-0 left-0 bg-red-700 text-white text-sm font-bold px-6 py-2 rounded-br-2xl rounded-tl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md z-10">🥩 Năng Lượng Ngập Tràn</div>
-      <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-6 relative">
-        <h2 class="text-3xl md:text-4xl text-gray-800 group-hover:text-red-700 transition-colors duration-300 z-10 font-bold">3. <span class="text-[#d32f2f] font-extrabold drop-shadow-sm">BÒ NÉ SÀI GÒN</span></h2>
-        <div class="overflow-hidden rounded-2xl shadow-lg group-hover:shadow-red-500/40 transition-shadow duration-500 flex-shrink-0">
-          <img class="w-full md:w-[450px] h-[360px] object-cover transform group-hover:scale-110 group-hover:rotate-2 transition-transform duration-700 ease-out cursor-pointer" src="image/Anh Am Thuc/BoNe.jfif" alt="Bò né Sài Gòn" />
-        </div>
-      </div>
-      <p class="ingredient">Nếu bánh mì là món ăn nhanh gọn cầm tay thì Bò Né lại là lựa chọn hoàn hảo cho một bữa sáng hoặc bữa tối nóng hổi, giàu năng lượng. Tên gọi "bò né" độc đáo xuất phát từ việc khi chảo bít tết vừa được mang ra, dầu mỡ vẫn còn xèo xèo bắn tí tách, khiến thực khách phải... "né" nhẹ ra để tránh bị bắn vào người.</p>
-      <p class="ingredient">Một chảo bò né nóng hổi chuẩn vị thường bao gồm các thành phần hấp dẫn:</p>
-      <p class="ingredient">+ <strong>Thịt bò mềm:</strong> Những miếng thịt bò đùi hoặc thăn tươi ngon được cắt xắn vừa ăn, ướp đậm đà và làm chín nhanh trên chảo gang xèo xèo lửa lớn.</p>
-      <p class="ingredient">+ <strong>Trứng ốp la:</strong> Trứng gà thả vào chảo gang nóng đun vừa chín tới, lòng đỏ còn sánh dẻo béo ngậy.</p>
-      <p class="ingredient">+ <strong>Topping ăn kèm:</strong> Thường có thêm pa-tê gan béo ngậy, xúc xích, xíu mại hoặc phô mai miếng tùy theo sở thích.</p>
-      <p class="ingredient">+ <strong>Bánh mì & Rau tươi:</strong> Ăn kèm ổ bánh mì giòn rụm để chấm xốt bò và lòng đỏ trứng, kết hợp cùng dưa leo, xà lách, hành tây cho bớt ngấy.</p>
-      <p class="ingredient">Thưởng thức bò né khi chảo còn nghi ngút khói, chấm miếng bánh mì giòn vào lớp nước xốt bò đậm đà hòa quyện cùng vị béo của lòng đỏ trứng là một trải nghiệm ẩm thực vô cùng thú vị.</p>
-    </section>
-
-    <section class="relative group bg-white hover:bg-stone-50 rounded-3xl p-6 md:p-8 shadow-md hover:shadow-2xl transition-all duration-500 ease-in-out hover:-translate-y-2 border border-solid border-gray-100 hover:border-stone-400 mb-16 mx-4 md:mx-auto max-w-5xl overflow-hidden" data-aos="fade-up">
-      <div class="absolute top-0 right-0 bg-stone-700 text-white text-sm font-bold px-6 py-2 rounded-bl-2xl rounded-tr-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md z-10">☕ Thức Uống Quốc Dân</div>
-      <div class="flex flex-col-reverse md:flex-row items-center justify-center gap-8 mb-6 relative">
-        <div class="overflow-hidden rounded-2xl shadow-lg group-hover:shadow-stone-500/40 transition-shadow duration-500 flex-shrink-0">
-          <img class="w-full md:w-[450px] h-[360px] object-cover transform group-hover:scale-110 group-hover:-rotate-2 transition-transform duration-700 ease-out cursor-pointer" src="image/Anh Am Thuc/cafe.jfif" alt="Cà phê sữa đá Sài Gòn" />
-        </div>
-        <h2 class="text-3xl md:text-4xl text-gray-800 group-hover:text-stone-700 transition-colors duration-300 z-10 font-bold">4. <span class="text-[#d32f2f] font-extrabold drop-shadow-sm">CÀ PHÊ SỮA ĐÁ SÀI GÒN</span></h2>
-      </div>
-      <p class="ingredient">Dù không phải là một món ăn dùng để no bụng, Cà Phê Sữa Đá lại là "thức uống quốc dân" và là mảnh ghép không thể thiếu trong bức tranh ẩm thực Sài Gòn. Không chỉ là thức uống giải khát giữa tiết trời nắng nóng quanh năm, nhâm nhi ly cà phê sáng còn là một nét văn hóa, một nhịp sống đậm chất người phương Nam.</p>
-      <p class="ingredient">Sự tinh tế quyến rũ nằm trong ly cà phê sữa đá truyền thống:</p>
-      <p class="ingredient">+ <strong>Cà phê phin đậm đà:</strong> Được chắt lọc từng giọt từ bột cà phê Robusta nguyên chất mộc mạc, mang lại hương vị đắng nhẹ và thơm nồng đặc trưng.</p>
-      <p class="ingredient">+ <strong>Sữa đặc ngọt ngào:</strong> Lớp sữa đặc béo ngậy nằm dưới đáy ly, khi khuấy đều với cà phê phin nóng sẽ tạo nên màu nâu sóng sánh bắt mắt.</p>
-      <p class="ingredient">+ <strong>Đá viên mát lạnh:</strong> Thêm những viên đá trong vắt giúp làm dịu độ ngọt đắng, mang lại cảm giác sảng khoái tức thì.</p>
-      <p class="ingredient">Từ những quán cà phê bệt vỉa hè giản dị cho đến các không gian sang trọng, ly cà phê sữa đá với hương vị đắng dịu hòa cùng vị ngọt béo luôn biết cách níu chân bất kỳ ai từng một lần ghé qua mảnh đất này.</p>
-    </section>
-
-    <section class="conclusion-section">
-      <h3>Lời Kết Cho Hành Trình Ẩm Thực</h3>
-      <p>Ẩm thực Sài Gòn không chỉ dừng lại ở hương vị, mà đó còn là câu chuyện về sự giao thoa văn hóa, sự hào sảng và mến khách của con người nơi đây. Mỗi món ăn là một mảng màu rực rỡ tạo nên bức tranh nhịp sống sống động của thành phố mang tên Bác.</p>
-      <p>Nếu bạn có dịp ghé thăm Sài Gòn, hãy dành thời gian để tản bộ qua những con hẻm nhỏ, ngồi ở một quán vỉa hè và tự mình thưởng thức những hương vị đặc trưng này nhé!</p>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-info">
-        <h3>Khám Phá Sài Gòn</h3>
-        <p>Website chia sẻ vẻ đẹp văn hóa, lịch sử và ẩm thực đặc sắc của Sài Gòn - TP. Hồ Chí Minh.</p>
-      </div>
-      <div class="footer-links">
-        <h4>Danh Mục</h4>
-        <ul>
-          <li><a href="index.html">Trang chủ</a></li>
-          <li><a href="lichsu.html">Lịch sử</a></li>
-          <li><a href="amthuc.html">Ẩm thực</a></li>
-          <li><a href="dulich.html">Du lịch</a></li>
-          <li><a href="vanhoa.html">Văn hóa</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Khám Phá Sài Gòn.</p>
-    </div>
-  </footer>
-  <button id="scrollTopBtn" title="Lên đầu trang">&#8679;</button>
-  <script src="Java/java.js"></script>
-</body>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    </footer>
+    <button id="scrollTopBtn" title="Lên đầu trang">&#8679;</button>
+    <script src="Java/java.js"></script>
+    <script src="Java/mobile-menu.js"></script>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
     once: true;

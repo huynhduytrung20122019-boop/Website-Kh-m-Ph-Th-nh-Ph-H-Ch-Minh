@@ -1,10 +1,16 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Trải nghiệm du lịch ẩm thực Sài Gòn đặc sắc." />
-    <meta name="keywords" content="du lịch ẩm thực, khám phá Sài Gòn, món ăn đường phố" />
+    <meta
+      name="description"
+      content="Trải nghiệm du lịch ẩm thực Sài Gòn đặc sắc."
+    />
+    <meta
+      name="keywords"
+      content="du lịch ẩm thực, khám phá Sài Gòn, món ăn đường phố"
+    />
     <meta
       name="description"
       content="Hòa mình vào ẩm thực đường phố Sài Gòn và các khu phố đi bộ sầm uất, nhộn nhịp đêm khuya."
@@ -29,18 +35,54 @@
       </nav>
     </header>
 
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+      <div class="logo">
+        <img
+          class="logo"
+          src="image/logo.png"
+          alt="Logo"
+          style="width: 40px; height: 40px"
+        />
+      </div>
+      <div class="header-actions">
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Lá»›p phá»§ tá»‘i má» (Overlay) -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Menu trÆ°á»£t tá»« bÃªn trÃ¡i -->
+    <nav class="mobile-menu-sidebar" id="mobileMenuSidebar">
+      <div class="menu-header">DANH Má»¤C</div>
+      <ul class="menu-list">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="lichsu.html">Lịch Sử</a></li>
+        <li><a href="amthuc.html">Ẩm thực</a></li>
+        <li><a href="dulich.html">Du Lịch</a></li>
+        <li><a href="vanhoa.html">Văn Hóa</a></li>
+      </ul>
+    </nav>
+
     <main>
       <!-- PHẦN 1: Hero ảnh lớn + tiêu đề -->
       <section
         class="subpage-hero fade-up"
-        style="background-image: url('image/Anh Du Lich/BenThanh.jpg');"
+        style="
+          background-image: url(&quot;image/Anh Du Lich/BenThanh.jpg&quot;);
+        "
       >
         <div class="hero-content">
-          <p class="eyebrow" style="color: #ffe082;">Hương vị &amp; Nhịp sống</p>
+          <p class="eyebrow" style="color: #ffe082">Hương vị &amp; Nhịp sống</p>
           <h1>Sài Gòn - Ẩm Thực &amp; Phố Đi Bộ</h1>
           <p>
-            Hòa mình vào không khí mua bán sầm uất, ẩm thực đường phố đa dạng
-            và tuyến phố đêm sôi động không bao giờ ngủ.
+            Hòa mình vào không khí mua bán sầm uất, ẩm thực đường phố đa dạng và
+            tuyến phố đêm sôi động không bao giờ ngủ.
           </p>
         </div>
       </section>
@@ -65,8 +107,8 @@
             <div class="subpage-card-body">
               <h3>Chợ đêm &amp; Món ngon</h3>
               <p>
-                Chợ Bến Thành — Thưởng thức Bún riêu, Hủ tiếu, Chè Sài Gòn
-                ngay trong lòng khu chợ biểu tượng sầm uất.
+                Chợ Bến Thành — Thưởng thức Bún riêu, Hủ tiếu, Chè Sài Gòn ngay
+                trong lòng khu chợ biểu tượng sầm uất.
               </p>
             </div>
           </article>
@@ -83,8 +125,8 @@
             <div class="subpage-card-body">
               <h3>Phố đêm sôi động</h3>
               <p>
-                Phố đi bộ Bùi Viện — Nơi hội tụ âm nhạc, ẩm thực đường phố
-                sôi động và văn hóa giao lưu quốc tế.
+                Phố đi bộ Bùi Viện — Nơi hội tụ âm nhạc, ẩm thực đường phố sôi
+                động và văn hóa giao lưu quốc tế.
               </p>
             </div>
           </article>
@@ -101,8 +143,8 @@
             <div class="subpage-card-body">
               <h3>Trục đường nhộn nhịp</h3>
               <p>
-                Phố đi bộ Nguyễn Huệ — Không gian sinh hoạt cộng đồng náo
-                nhiệt với vô số quán trà sữa, ăn vặt thú vị.
+                Phố đi bộ Nguyễn Huệ — Không gian sinh hoạt cộng đồng náo nhiệt
+                với vô số quán trà sữa, ăn vặt thú vị.
               </p>
             </div>
           </article>
@@ -119,15 +161,15 @@
             <div class="subpage-card-body">
               <h3>Hương vị đường phố</h3>
               <p>
-                Gánh hàng rong, xe bánh mì, ly nước mía — Ẩm thực Sài Gòn
-                đơn giản mà đậm đà, khó quên trong từng góc phố.
+                Gánh hàng rong, xe bánh mì, ly nước mía — Ẩm thực Sài Gòn đơn
+                giản mà đậm đà, khó quên trong từng góc phố.
               </p>
             </div>
           </article>
         </div>
 
         <!-- Bảng thông tin ẩm thực -->
-        <div class="subpage-details fade-up" style="padding: 0 0 16px;">
+        <div class="subpage-details fade-up" style="padding: 0 0 16px">
           <div class="info-table">
             <table>
               <thead>
@@ -163,12 +205,23 @@
       <section class="subpage-footer-action fade-up">
         <h2>Bạn đã sẵn sàng lên lịch cho chuyến đi?</h2>
         <p>
-          Trở về trang Du Lịch chính để khám phá thêm hoặc xem lại trang
-          Lịch sử &amp; Kiến trúc Sài Gòn.
+          Trở về trang Du Lịch chính để khám phá thêm hoặc xem lại trang Lịch sử
+          &amp; Kiến trúc Sài Gòn.
         </p>
-        <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
-          <a href="dulich.html" class="btn btn-primary">← Trở về trang Du Lịch chính</a>
-          <a href="dulich-lichsu.html" class="btn btn-secondary">Xem lại Lịch sử &amp; Kiến trúc →</a>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+          "
+        >
+          <a href="dulich.html" class="btn btn-primary"
+            >← Trở về trang Du Lịch chính</a
+          >
+          <a href="dulich-lichsu.html" class="btn btn-secondary"
+            >Xem lại Lịch sử &amp; Kiến trúc →</a
+          >
         </div>
       </section>
     </main>
@@ -185,5 +238,6 @@
 
     <button id="scrollTopBtn" title="Lên đầu trang">↑</button>
     <script src="Java/dulich.js"></script>
+    <script src="Java/mobile-menu.js"></script>
   </body>
 </html>
