@@ -9,6 +9,7 @@ body {
   line-height: 1.6;
   background-color: #fafafa;
   color: #333;
+  overflow-x: hidden; /* Ngăn tràn ngang trên mobile */
 }
 
 .Menu {
@@ -302,10 +303,23 @@ main p {
   .food-name {
     flex-direction: column;
     text-align: center;
+    padding: 5px 10px;
+    gap: 15px;
   }
   .food-name img,
   .anhamthuc1 {
     width: 100%;
     height: auto;
+    max-width: 100%; /* Đảm bảo không tràn */
+  }
+  .tieu-de-cuon-hut {
+    font-size: 26px;
+  }
+  .conclusion-section {
+    padding: 20px 15px;
+    margin: 30px 10px 20px;
+  }
+  main p {
+    padding: 0 10px;
   }
 }

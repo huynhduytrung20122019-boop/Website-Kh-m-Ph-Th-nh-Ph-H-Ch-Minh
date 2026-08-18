@@ -10,11 +10,13 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  overflow-x: hidden; /* Ngăn tràn ngang */
 }
 
 img {
   display: block;
   width: 100%;
+  max-width: 100%; /* Đảm bảo ảnh không tràn */
 }
 
 /* Thanh quay lai */
@@ -1015,5 +1017,76 @@ img {
   .subpage-footer-action {
     margin: 0 12px 24px;
     padding: 28px 16px;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE TỔNG THỂ TRANG DU LỊCH        */
+/* ========================================= */
+@media (max-width: 768px) {
+  /* Hero section */
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.4rem;
+  }
+
+  /* Preview panel */
+  .preview-panel {
+    grid-template-columns: 1fr;
+  }
+
+  /* Trip grid 3 cột -> 1 cột */
+  .trip-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Subpage card grid 3 cột -> 1 cột */
+  .travel-subpage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Section padding */
+  .gallery-section,
+  .explore-section,
+  .travel-subpages-section,
+  .contact-section {
+    padding: 16px;
+  }
+
+  /* Form liên hệ */
+  .lienhe-form {
+    flex-direction: column;
+  }
+
+  .contact-form-panel {
+    width: 100%;
+  }
+
+  /* Image card width */
+  .image-card {
+    flex: 0 0 200px;
+  }
+
+  .image-card img {
+    height: 160px;
+  }
+
+  /* Bảng thông tin trang con */
+  .info-table table {
+    font-size: 0.85rem;
+  }
+
+  .info-table th,
+  .info-table td {
+    padding: 10px 8px;
+  }
+
+  /* subpage-details */
+  .subpage-details {
+    padding: 0 12px 8px;
   }
 }
